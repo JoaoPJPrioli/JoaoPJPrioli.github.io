@@ -2,287 +2,134 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart Manufacturing & Disassembly Research Lab</title>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
-<style>
-:root {
-    --primary-color: #1a237e;
-    --secondary-color: #0d47a1;
-    --accent-color: #42a5f5;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-}
-
-.hero-section {
-    background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(13, 71, 161, 0.9));
-    color: white;
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='2' d='M0,50 L100,50 M50,0 L50,100'/%3E%3C/svg%3E");
-    opacity: 0.1;
-}
-
-.nav-link {
-    color: var(--primary-color) !important;
-    font-weight: 500;
-}
-
-.nav-link:hover {
-    color: var(--accent-color) !important;
-}
-
-.research-card {
-    border: none;
-    transition: transform 0.3s ease;
-    margin-bottom: 20px;
-}
-
-.research-card:hover {
-    transform: translateY(-5px);
-}
-
-.publication {
-    border-left: 4px solid var(--accent-color);
-    padding-left: 15px;
-    margin-bottom: 20px;
-}
-
-.team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.animated-gear {
-    animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <svg class="animated-gear" width="30" height="30" viewBox="0 0 100 100">
-                <path fill="var(--primary-color)" d="M50 25L60 35L50 45L40 35z M35 50L45 60L35 70L25 60z M65 50L75 60L65 70L55 60z"/>
-            </svg>
-            SmartD Lab
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#research">Research</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#publications">Publications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#team">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+  <header>
+    <div class="header-content">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-</nav>
+  </header>
 
-<!-- Hero Section -->
-<div class="hero-section">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8">
-                <h1>Smart Manufacturing & Disassembly Research Lab</h1>
-                <p class="lead">Advancing the future of sustainable manufacturing through innovative research in disassembly automation and smart manufacturing systems.</p>
-            </div>
-            <div class="col-lg-4">
-                <svg class="animated-gear" width="200" height="200" viewBox="0 0 200 200">
-                    <path fill="white" d="M100 50L120 70L100 90L80 70z M70 100L90 120L70 140L50 120z M130 100L150 120L130 140L110 120z"/>
-                </svg>
-            </div>
-        </div>
+  <section id="home" class="hero">
+    <div class="hero-content fade-in">
+      <h1>Smart Manufacturing & Disassembly Research Lab</h1>
+      <p>Advancing the future of sustainable manufacturing through innovative research and technology</p>
     </div>
-</div>
+  </section>
 
-<!-- Research Areas -->
-<section id="research" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Research Areas</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card research-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Automated Disassembly</h5>
-                        <p class="card-text">Developing AI-driven robotic systems for efficient and adaptive product disassembly in remanufacturing.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card research-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Smart Manufacturing</h5>
-                        <p class="card-text">Implementing Industry 4.0 technologies for intelligent production systems and real-time process optimization.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card research-card">
-                    <div class="card-body">
-                        <h5 class="card-title">Circular Economy</h5>
-                        <p class="card-text">Research on sustainable manufacturing practices and closed-loop supply chains.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <section id="research" class="section">
+    <h2 class="section-title">Research Areas</h2>
+    <div class="research-grid">
+      <div class="research-card">
+        <h3>Smart Manufacturing</h3>
+        <p>Investigating Industry 4.0 technologies, IoT integration, and AI-driven manufacturing processes to enhance productivity and efficiency.</p>
+      </div>
+      <div class="research-card">
+        <h3>Disassembly Automation</h3>
+        <p>Developing intelligent systems for automated disassembly of end-of-life products to support circular economy initiatives.</p>
+      </div>
+      <div class="research-card">
+        <h3>Sustainable Manufacturing</h3>
+        <p>Researching environmentally conscious manufacturing methods and lifecycle assessment strategies.</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Publications -->
-<section id="publications" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">Recent Publications</h2>
-        <div class="publication">
-            <h5>Automated Disassembly Planning in Circular Manufacturing</h5>
-            <p>Journal of Cleaner Production, 2023</p>
-        </div>
-        <div class="publication">
-            <h5>Smart Manufacturing Systems: A Review</h5>
-            <p>International Journal of Production Research, 2022</p>
-        </div>
-        <div class="publication">
-            <h5>AI-Driven Robotic Disassembly for Electronic Waste</h5>
-            <p>IEEE Transactions on Automation Science and Engineering, 2022</p>
-        </div>
+  <section id="team" class="section">
+    <h2 class="section-title">Our Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img alt="Professor headshot, professional portrait style" src="professor.jpg" width="200" height="200">
+        <h3>Dr. Jane Smith</h3>
+        <p>Assistant Professor</p>
+        <p>Industrial and Systems Engineering</p>
+      </div>
+      <div class="team-member">
+        <img alt="Graduate student headshot, casual professional style" src="grad-student1.jpg" width="200" height="200">
+        <h3>John Doe</h3>
+        <p>PhD Student</p>
+      </div>
+      <div class="team-member">
+        <img alt="Graduate student headshot, casual professional style" src="grad-student2.jpg" width="200" height="200">
+        <h3>Sarah Johnson</h3>
+        <p>PhD Student</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Team -->
-<section id="team" class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-5">Our Team</h2>
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="team-member">
-                    <svg width="150" height="150" viewBox="0 0 150 150">
-                        <circle cx="75" cy="75" r="70" fill="#e0e0e0"/>
-                        <circle cx="75" cy="60" r="25" fill="#9e9e9e"/>
-                        <path d="M75 95C50 95 35 120 35 150H115C115 120 100 95 75 95Z" fill="#9e9e9e"/>
-                    </svg>
-                    <h5 class="mt-3">Dr. Jane Smith</h5>
-                    <p>Assistant Professor</p>
-                </div>
-            </div>
-            <!-- Add more team members as needed -->
-        </div>
-    </div>
-</section>
+  <section id="publications" class="section">
+    <h2 class="section-title">Recent Publications</h2>
+    <ul class="publication-list">
+      <li class="publication-item">
+        <h3>Smart Manufacturing Systems: A Review</h3>
+        <p>Smith, J., et al. (2023). Journal of Manufacturing Science and Engineering</p>
+      </li>
+      <li class="publication-item">
+        <h3>Automated Disassembly Planning for Electronic Waste</h3>
+        <p>Doe, J., Smith, J. (2022). International Journal of Production Research</p>
+      </li>
+      <li class="publication-item">
+        <h3>AI-Driven Approaches in Sustainable Manufacturing</h3>
+        <p>Johnson, S., Smith, J. (2022). Journal of Cleaner Production</p>
+      </li>
+    </ul>
+  </section>
 
-<!-- Contact -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">Contact Us</h2>
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="card">
-                    <div class="card-body">
-                        <form id="contact-form">
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h5>Smart Manufacturing & Disassembly Research Lab</h5>
-                <p>Department of Industrial and Systems Engineering<br>
-                University Name<br>
-                Address Line 1<br>
-                City, State ZIP</p>
-            </div>
-            <div class="col-md-6 text-md-end">
-                <div class="social-links">
-                    <a href="https://twitter.com" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-                    <a href="https://linkedin.com" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com" class="text-white"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+  <footer>
+    <p>© 2023 Smart Manufacturing & Disassembly Research Lab. All rights reserved.</p>
+  </footer>
 
-<script>
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+  <script>
+    // Add smooth scrolling to all navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
         });
+      });
     });
-});
 
-// Contact form handling
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    // Add your form submission logic here
-    alert('Thank you for your message. We will get back to you soon!');
-    this.reset();
-});
-
-// Animation on scroll
-window.addEventListener('scroll', function() {
-    const cards = document.querySelectorAll('.research-card');
-    cards.forEach(card => {
-        const cardTop = card.getBoundingClientRect().top;
-        if (cardTop < window.innerHeight - 100) {
-            card.style.opacity = '1';
+    // Add animation to elements when they come into view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
         }
+      });
     });
-});
-</script>
 
+    document.querySelectorAll('.research-card, .team-member, .publication-item').forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html>
