@@ -1,6 +1,6 @@
 # Smart Manufacturing & Disassembly Lab Website
 
-This repository contains the website for the Smart Manufacturing & Disassembly Lab at [University Name]. The website showcases our research work in smart manufacturing, automated disassembly, and sustainable manufacturing systems.
+This repository contains the website for the Smart Manufacturing & Disassembly Lab at North Carolina A&T State University. The website showcases our research work in smart manufacturing, automated disassembly, and sustainable manufacturing systems.
 
 ## Structure
 
