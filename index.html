@@ -3,41 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Manufacturing & Disassembly Lab</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <title>Smart Manufacturing &amp; Disassembly Lab</title>
     <link rel="stylesheet" href="assets/css/new-styles.css">
 </head>
-<body class="bg-gray-50">
+<body>
+
     <!-- Navigation -->
-    <nav class="bg-gray-800 text-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-xl font-bold">SMDL</a>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="hover:text-gray-300">Home</a>
-                    <a href="research.html" class="hover:text-gray-300">Research</a>
-                    <a href="publications.html" class="hover:text-gray-300">Publications</a>
-                    <a href="team.html" class="hover:text-gray-300">Team</a>
-                    <a href="contact.html" class="hover:text-gray-300">Contact</a>
-                </div>
-            </div>
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">SMDL</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="bio.html" class="nav-bio">Bio</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="bg-white py-12">
-        <div class="max-w-7xl mx-auto px-4 flex items-center gap-8">
-            <div class="w-1/3">
-                <img src="assets/images/home/lab_picture_placeholder.png" alt="Lab Picture" class="rounded-lg shadow-lg">
+    <header class="site-hero">
+        <div class="hero-inner">
+            <div class="hero-image">
+                <img src="assets/images/home/lab_picture_placeholder.png" alt="Lab Picture">
             </div>
-            <div class="w-2/3">
-                <h1 class="text-4xl font-bold mb-4">Smart Manufacturing & Disassembly Lab</h1>
-                <p class="text-xl text-gray-700">The lab aims to close the loop between product design and manufacturability through modeling and interconnecting heterogeneous and hybrid systems.</p>
+            <div class="hero-text">
+                <h1>Smart Manufacturing<br>&amp; <span class="accent">Disassembly Lab</span></h1>
+                <p>The lab aims to close the loop between product design and manufacturability through modeling and interconnecting heterogeneous and hybrid systems. We develop cutting-edge computational methods to enable sustainable, intelligent manufacturing.</p>
+                <div class="hero-tags">
+                    <span class="hero-tag">// smart_manufacturing</span>
+                    <span class="hero-tag">// disassembly_automation</span>
+                    <span class="hero-tag">// hybrid_systems</span>
+                    <span class="hero-tag">// sustainability</span>
+                </div>
             </div>
         </div>
     </header>
+
+    <!-- Highlight bar -->
+    <div class="highlight-bar">
+        North Carolina A&amp;T State University &mdash; Department of Industrial &amp; Systems Engineering
+    </div>
+
+    <!-- Research Highlights -->
+    <section class="section-wrap">
+        <h2 class="section-title">Research Highlights</h2>
+        <div class="card-grid">
+            <div class="card">
+                <img src="assets/images/research/video1_placeholder.png" alt="Research Area 1">
+                <div class="card-body">
+                    <h2>Manufacturing Systems Modeling</h2>
+                    <p>Developing models to represent complex manufacturing environments and optimize production processes.</p>
+                    <a href="research.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/research/video2_placeholder.png" alt="Research Area 2">
+                <div class="card-body">
+                    <h2>Disassembly Automation</h2>
+                    <p>Applying robotics and AI to automate end-of-life product disassembly for sustainable reuse and recycling.</p>
+                    <a href="research.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/images/research/video3_placeholder.png" alt="Research Area 3">
+                <div class="card-body">
+                    <h2>Hybrid System Integration</h2>
+                    <p>Interconnecting heterogeneous systems to enable seamless data flow from design to manufacturing.</p>
+                    <a href="research.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2025 Smart Manufacturing &amp; Disassembly Lab &mdash; <a href="https://www.ncat.edu" target="_blank">NC A&amp;T State University</a></p>
+    </footer>
 
 </body>
 </html>
