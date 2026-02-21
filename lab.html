@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab - Smart Manufacturing &amp; Disassembly Lab</title>
+    <link rel="stylesheet" href="assets/css/new-styles.css">
+    <style>
+        .lab-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .lab-item {
+            background: var(--card);
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            overflow: hidden;
+            border-top: 3px solid var(--cyan);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .lab-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+        }
+
+        .lab-item img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .lab-item-body {
+            padding: 1.25rem;
+        }
+
+        .lab-item-body h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem;
+            color: var(--text);
+        }
+
+        .lab-item-body p {
+            font-size: 0.9rem;
+            color: var(--muted);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .lab-intro {
+            background: var(--card);
+            border-radius: 4px;
+            padding: 1.75rem;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 4px solid var(--cyan);
+        }
+
+        .lab-intro p {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.75;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">SMDL</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="lab.html" class="active">Lab</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="bio.html" class="nav-bio">Bio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="section-wrap">
+        <h1 class="section-title">Our Lab</h1>
+
+        <div class="lab-intro">
+            <p>
+                The Smart Manufacturing &amp; Disassembly Lab (SMDL) at North Carolina A&amp;T State University is equipped
+                with state-of-the-art machinery and robotic systems that support cutting-edge research in automation,
+                smart manufacturing, and end-of-life product processing. Our facility provides the experimental
+                infrastructure needed to develop and validate computational frameworks for CAD-based disassembly,
+                human-robot collaboration, and data-driven manufacturing intelligence. The lab bridges the gap between
+                theoretical research and real-world industrial applications, enabling our team to tackle pressing
+                challenges in sustainable manufacturing and circular economy practices.
+            </p>
+        </div>
+
+        <!-- Lab Equipment Gallery -->
+        <div class="lab-gallery">
+
+            <div class="lab-item">
+                <img src="assets/images/lab/p1.jpg" alt="Lab Equipment 1">
+                <div class="lab-item-body">
+                    <h3>Robotic Workstation</h3>
+                    <p>
+                        A versatile robotic workstation used for developing and testing automated assembly and
+                        disassembly sequences. Supports research in human-robot collaboration and adaptive
+                        manipulation strategies for end-of-life product processing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lab-item">
+                <img src="assets/images/lab/p2.jpg" alt="Lab Equipment 2">
+                <div class="lab-item-body">
+                    <h3>Manufacturing Test Bench</h3>
+                    <p>
+                        A reconfigurable manufacturing test bench used for prototyping smart manufacturing
+                        workflows and evaluating sensor integration strategies. Enables experimental validation
+                        of data-driven models in realistic production scenarios.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lab-item">
+                <img src="assets/images/lab/p3.jpg" alt="Lab Equipment 3">
+                <div class="lab-item-body">
+                    <h3>Disassembly Platform</h3>
+                    <p>
+                        A dedicated platform for conducting automated disassembly experiments, supporting
+                        research on CAD-guided motion planning and force-controlled robotic disassembly. Used
+                        to study efficient resource recovery from complex multi-component products.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lab-item">
+                <img src="assets/images/lab/p4.jpg" alt="Lab Equipment 4">
+                <div class="lab-item-body">
+                    <h3>Lab Overview</h3>
+                    <p>
+                        An overview of the SMDL facility showcasing the integrated research environment where
+                        smart manufacturing experiments are conducted. The lab space supports collaborative
+                        projects across robotics, automation, and sustainable manufacturing research areas.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2025 Smart Manufacturing &amp; Disassembly Lab &mdash; <a href="https://www.ncat.edu" target="_blank">NC A&amp;T State University</a></p>
+    </footer>
+
+</body>
+</html>
